@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Exhibition</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h1::before {
+            content: "Degree";
+            font-family: "Bahnschrift", sans-serif;
+            margin-right: 8px; /* Adds spacing between the words */
+        }
+
+        h1::after {
+            content: "Exhibition";
+            font-family: "Lucida Calligraphy", cursive;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+</body>
+</html>
