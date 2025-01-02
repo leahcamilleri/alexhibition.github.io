@@ -9,13 +9,45 @@
         body {
             background-color: beige;
             font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
         }
+       
         header h1 {
             font-family: "Georgia", serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
         }
+
+        /* Toolbar styling */
+        .toolbar {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .toolbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .toolbar a:hover {
+            background-color: #666;
+        }
+
         nav ul li a {
             font-family: "Courier New", monospace;
         }
+
         section h2 {
             font-family: "Verdana", sans-serif;
         }
@@ -25,6 +57,14 @@
     <header>
         <h1>Degree Exhibition</h1>
     </header>
+
+    <!-- Toolbar Section -->
+    <div class="toolbar">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Home</a>
+    </div>
 
     <div id="navigation"></div>
     <script>
@@ -45,6 +85,11 @@
         <section id="projects">
             <h2>Featured Projects</h2>
             <p>Explore the groundbreaking work presented by this year's graduates.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out.</p>
         </section>
     </main>
 
