@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Exhibition</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        body {
+            background-color: beige;
+            font-family: "Arial", sans-serif;
+        }
+        header h1 {
+            font-family: "Georgia", serif;
+        }
+        nav ul li a {
+            font-family: "Courier New", monospace;
+        }
+        section h2 {
+            font-family: "Verdana", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Degree Exhibition</h1>
+    </header>
+
+    <div id="navigation"></div>
+    <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navigation").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navigation:", error));
+    </script>
+
+    <main>
+        <section id="about">
+            <h2>About the Exhibition</h2>
+            <p>Welcome to the Degree Exhibition, showcasing the innovative projects of our graduating students.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <p>Explore the groundbreaking work presented by this year's graduates.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Degree Exhibition. All rights reserved.</p>
+    </footer>
+</body>
+</html>
